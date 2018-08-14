@@ -1,0 +1,49 @@
+{
+  "name": "testing-rxjs-observables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-rc.1",
+    "@babel/preset-typescript": "^7.0.0-rc.1",
+    "@types/jest": "^23.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "jest": "^23.4.2",
+    "typescript": "^3.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "./node_modules",
+      "./src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.(j|t)s?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)"
+    ]
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
+  "dependencies": {
+    "rxjs": "^6.2.2"
+  }
+}
